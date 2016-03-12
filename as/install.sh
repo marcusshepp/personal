@@ -1,4 +1,4 @@
-BASEPACKAGELIST="python-dev nginx python-pip virtualenv"
+BASEPACKAGELIST="python-dev nginx python-pip python-virtualenv"
 
 sudo apt-get upgrade
 sudo apt-get update
