@@ -1,6 +1,10 @@
 # personal gunicorn script
 # runs a daemon process
-# see processes with ps -<something>
+# see processes with ps -aux
+# tested on: Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64), aws ec2
+
+# Marcus Shepherd
+# 3-12-16
 
 
 SETTINGS=personal.settings
