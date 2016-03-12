@@ -4,7 +4,6 @@
 
 
 SETTINGS=personal.settings
-WSGI=personal.wsgi
 SOCK=/opt/proc/personal-gunicorn.sock
 PID=/opt/proc/personal-gunicorn.pid
 WORKERS=3
@@ -13,7 +12,7 @@ LOGFILE=/opt/proc/personal-gunicorn.log
 
 gunicorn \
     --env DJANGO_SETTINGS_MODULE=$SETTINGS \
-    $WSGI:application \
+    personal.wsgi:application \
     --pid $PID \
     --bind unix:$SOCK \
     --workers $WORKERS \
