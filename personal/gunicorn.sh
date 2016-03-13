@@ -6,6 +6,13 @@
 # Marcus Shepherd
 # 3-12-16
 
+DIRECT=/opt/proc/
+if ! [[ -d $DIRECT ]]; then
+    ls -la /opt/
+    echo $DIRECT" does not exist.. creating.."
+    sudo mkdir $DIRECT
+    ls -la /opt/
+fi
 
 SETTINGS=personal.settings
 SOCK=/opt/proc/personal-gunicorn.sock
