@@ -1,3 +1,4 @@
 .opt/
 *.pyc
 .opt/*
+personal/personal/settings.py
