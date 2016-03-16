@@ -1,25 +1,37 @@
-# personal gunicorn script
-# runs a daemon process
-# see processes with ps -aux
-# tested on: Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64), aws ec2
-
-# Marcus Shepherd
-# 3-12-16
-
-
-SETTINGS=personal.settings
-SOCK=/opt/proc/personal-gunicorn.sock
-PID=/opt/proc/personal-gunicorn.pid
+NAME=personal
+SETTINGS=$NAME.settings
+SOCK=/opt/proc/$NAME-gunicorn.sock
+PID=/opt/proc/$NAME-gunicorn.pid
+LOGFILE=/opt/proc/$NAME-gunicorn.log
 WORKERS=3
-NAME=personal_webapp
-LOGFILE=/opt/proc/personal-gunicorn.log
+
+
+echo 'Creating Daemon process for: '$NAME
+echo 'LOGFILE: '$LOGFILE
+
+
+DIRECT=/opt/proc/
+echo "does $DIRECT exist?"
+if ! [[ -d $DIRECT ]]; then
+    ls -la /opt/
+    echo $DIRECT" does not exist.. creating.."
+    sudo mkdir $DIRECT
+    ls -la /opt/
+else
+    echo "Yes it does."
+    echo "removing /opt/proc/$NAME*"
+    rm -rf /opt/proc/$NAME*
+fi
+
 
 gunicorn \
     --env DJANGO_SETTINGS_MODULE=$SETTINGS \
-    personal.wsgi:application \
+    $NAME.wsgi:application \
     --pid $PID \
     --bind unix:$SOCK \
     --workers $WORKERS \
     --name $NAME \
     --daemon \
     --log-file=$LOGFILE
+
+# run from /opt/dollars

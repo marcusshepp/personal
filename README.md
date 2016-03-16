@@ -1,9 +1,4 @@
-an exercise in deployment. 
+My main app that contains links to other apps proxied behind it.
 
 
-finished 3-12-16
-
-
-terminated ec2 ubuntu server after init django message
-
-http://52.37.3.209/
+http://52.26.186.87/
