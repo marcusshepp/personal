@@ -74,17 +74,6 @@ WSGI_APPLICATION = 'personal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'personal',
-        'USER': 'personal_db',
-        'PASSWORD': 'personal_db',
-	    'HOST': 'localhost',
-        'PORT': '',
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
