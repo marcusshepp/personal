@@ -2,3 +2,4 @@
 *.pyc
 .opt/*
 personal/personal/settings.py
+personal/db*
