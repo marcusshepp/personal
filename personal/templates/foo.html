@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Boo Far</title>
+        {% load staticfiles %}
+    </head>
+    <body>
+        <div class="">Type some shit</div>
+        <div class="" ng-controller="CatGenerator as cg">
+            <input type="text" ng-model="cat_size_x">
+            <span>X</span>
+            <input type="text" ng-model="cat_size_y">
+            <input type="button" value="Get Cat" ng-click="gen_cat()">
+            <div class=""><img ng-bind="http://placekitten.com/{[ cat_size_x ]}/{[ cat_size_y ]}" \
+                alt="foobar" /></div>
+        </div>
+        <div class="" ng-app="myfirstapp" ng-controller="MyController as mycontroller">
+            <!-- 
+            <div class="images" ng-repeat="size in mycontroller.sizes">
+                <img src="http://placekitten.com/{[ size[0] ]}/{[ size[1] ]}" alt="foobar" />
+            </div> 
+            <div class="" ng-repeat="p in mycontroller.pops">{[ p ]}</div>
+            <input type="text" name="name" value="" ng-model="v1">
+            <span>*</span>
+            <input type="text" name="name" value="" ng-model="v2">
+            <span class="">Total: {[ multiply(v1, v2) ]}</span>
+            <div class="" contenteditable="true">foobar</div>
+            -->
+        </div>
+    <script type="text/javascript" \
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>  
+    <script type="text/javascript" src="{% static 'js/foo.js' %}"></script>
+    </body>
+</html>
