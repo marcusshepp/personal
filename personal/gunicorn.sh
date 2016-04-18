@@ -33,7 +33,6 @@ else
     rm -rf /opt/proc/$NAME*
 fi
 
-
 gunicorn \
     --env DJANGO_SETTINGS_MODULE=$SETTINGS \
     $NAME.wsgi:application \
