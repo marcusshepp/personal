@@ -1,3 +1,12 @@
+# django gunicorn script
+# Generates a Daemon process with Gunicorn.
+# see processes with ps -aux
+# tested on: Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-74-generic x86_64), aws ec2
+# Runs on apps built with Django==1.9
+# Marcus Shepherd <marcusshepdotcom@gmail.com>
+# 3-12-16
+
+
 NAME=personal
 SETTINGS=$NAME.settings
 SOCK=/opt/proc/$NAME-gunicorn.sock
@@ -6,6 +15,7 @@ LOGFILE=/opt/proc/$NAME-gunicorn.log
 WORKERS=3
 
 
+DIRECT=/opt/proc/
 echo 'Creating Daemon process for: '$NAME
 echo 'LOGFILE: '$LOGFILE
 
@@ -22,7 +32,6 @@ else
     echo "removing /opt/proc/$NAME*"
     rm -rf /opt/proc/$NAME*
 fi
-
 
 gunicorn \
     --env DJANGO_SETTINGS_MODULE=$SETTINGS \
