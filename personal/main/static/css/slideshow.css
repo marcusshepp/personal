@@ -1,0 +1,34 @@
+ul{
+    list-style: none;
+    margin-left: 10%;
+}
+li{
+}
+.active{
+}
+.hide{
+    display: none;
+}
+.prev_img_btn,
+.next_img_btn{
+    top: 5em;
+    position: absolute;
+    background: grey;
+    padding-left: 2%;
+    width: 3%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.prev_img_btn:hover,
+.next_img_btn:hover{
+    background: black;
+    color: white;
+}
+.next_img_btn{
+    right: 0%;
+}
+.foobar{
+    width: 1%;
+    word-wrap: break-word;
+}

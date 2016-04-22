@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>slideshow</title>
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/slideshow.css' %}" media="screen" title="no title" charset="utf-8">
+        <script type="text/javascript" src="{% static 'js/slideshow.js' %}"></script>
+    </head>
+    <body>
+        <h1>Cats Galor!</h1>
+        <ul>
+            <li class="active"><img src="http://placekitten.com/300/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/400/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/500/800"/></li>
+            <li class="hide"><img src="http://placekitten.com/600/700"/></li>
+            <li class="hide"><img src="http://placekitten.com/300/800"/></li>
+            <li class="hide"><img src="http://placekitten.com/300/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/100/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/500/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/900/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/500/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/660/1000"/></li>
+            <li class="hide"><img src="http://placekitten.com/800/400"/></li>
+            <li class="hide"><img src="http://placekitten.com/350/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/250/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/450/500"/></li>
+            <li class="hide"><img src="http://placekitten.com/900/900"/></li>
+        </ul>
+        <div class="prev_img_btn">
+            <div class="foobar">Previous</div>
+        </div>
+        
+        <div class="next_img_btn">
+            <div class="foobar">Next</div>
+        </div>
+        
+    </body>
+</html>

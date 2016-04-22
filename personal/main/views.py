@@ -9,3 +9,6 @@ class Main(View):
         
 def foo(request):
     return render(request, "foo.html")
+
+def slideshow(request):
+    return render(request, "main/slideshow.html")
