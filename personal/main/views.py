@@ -12,3 +12,6 @@ def foo(request):
 
 def slideshow(request):
     return render(request, "main/slideshow.html")
+    
+def modal(request):
+    return render(request, "main/modal.html")

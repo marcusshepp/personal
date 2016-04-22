@@ -7,6 +7,7 @@ from main.views import (
     Main,
     foo,
     slideshow,
+    modal,
 )
 
 urlpatterns = [
@@ -14,4 +15,5 @@ urlpatterns = [
     url(r'^$', Main.as_view(), name="main"),
     url(r'^foo/$', foo, name="foo"),
     url(r'^slideshow/$', slideshow, name="slideshow"),
+    url(r'^modal/$', modal, name="modal"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
