@@ -5,40 +5,51 @@
     <title>MarcusShep</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/slideshow.css' %}" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <header>
         Marcus John Shepherd
     </header>
     <div class="app_previews_container">
-        <div class="static_package">
-            <img src="{% static 'images/dollars2.png' %}" alt="" />
-        </div>
-        <div class="blog_package">
-            <img src="{% static 'images/dollars1.png' %}" alt="" />            
-        </div>
-        <div class="complete_package">
-            <img src="http://placekitten.com/300/500" alt="" />
-        </div>
+        <div class="previous_slide"><</div>
+        <img class="hidden" src="{% static 'images/dollars2.png' %}" alt="" />
+        <img class="active" src="{% static 'images/dollars1.png' %}" alt="" />
+        <img class="hidden" src="http://placekitten.com/300/500" alt="" />
+        <div class="next_slide">></div>
     </div>
     <div class="pricing_container">
         <div class="static_package">
             <div class="package_title">
-                Static HTML/CSS Website    
+                Static HTML/CSS Website
             </div>
             <div class="package_description">
-                Static HTML/CSS Website    
+                Static HTML/CSS Website
             </div>
             <div class="package_price">
-                Static HTML/CSS Website    
+                Static HTML/CSS Website
             </div>
         </div>
         <div class="blog_package">
-            <img src="http://placekitten.com/300/500" alt="" />
-        </div>
+            <div class="package_title">
+                Static HTML/CSS Website
+            </div>
+            <div class="package_description">
+                Static HTML/CSS Website
+            </div>
+            <div class="package_price">
+                Static HTML/CSS Website
+            </div>        </div>
         <div class="complete_package">
-            <img src="http://placekitten.com/300/500" alt="" />
-        </div>
+            <div class="package_title">
+                Static HTML/CSS Website
+            </div>
+            <div class="package_description">
+                Static HTML/CSS Website
+            </div>
+            <div class="package_price">
+                Static HTML/CSS Website
+            </div>        </div>
     </div>
   </body>
 </html>

@@ -2,9 +2,7 @@ body{
     background-color: black;
 }
 header{
-    background-color: blue;
-}
-.app_previews_container{
+    background-color: #D4D4D4;
 }
 .pricing_container{
     background-color: black;
@@ -12,17 +10,12 @@ header{
     padding: 1em;
     padding-left: 8%;
 }
-.app_previews_container > div,
 .pricing_container > div{
     display: inline-block;
-    background-color: red;
+    background-color: #D4D4D4;
     width: 25%;
     height: 450px;
     padding: 1.5em;
     padding-left: 3em;
     vertical-align: top;
-}
-.app_previews_container{
-    padding: 1em;
-    padding-left: 8%;
 }
