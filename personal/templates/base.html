@@ -6,16 +6,18 @@
         <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/blog_main.css' %}" media="screen" title="no title" charset="utf-8">
+        <script type="text/javascript" src="{% static 'assets/js/angular1.5.5.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/blog_app.js' %}"></script>
     </head>
     <body>
-        <div class="content">
+        <div class="content" ng-app="blog_app">
             {% block content %}
             {% endblock %}
         </div>
-        
+
         {% block javascript %}
             <script type="text/javascript">
-            </script>    
+            </script>
         {% endblock %}
     </body>
 </html>

@@ -14,6 +14,8 @@ class PostSerializer(serializers.ModelSerializer):
             "body",
             "placeholder_image",
             "category",
+            "id",
+            "display_date_created",
         )
 
 
@@ -25,6 +27,8 @@ class CommentSerializer(serializers.ModelSerializer):
             "body",
             "post",
             "comments",
+            "id",
+            "display_date_created",
         )
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -32,4 +36,6 @@ class CategorySerializer(serializers.ModelSerializer):
         model = Category
         fields = (
             "name",
+            "id",
+            "display_date_created",
         )

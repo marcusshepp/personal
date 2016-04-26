@@ -16,18 +16,18 @@ from .serializers import (
 
 def blog_landing(request):
     return render(request, "blog/landing.html")
-    
-    
-class PostViewSet(viewsets.ReadOnlyModelViewSet):
+
+
+class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
 
-class CommentViewSet(viewsets.ReadOnlyModelViewSet):
+class CommentViewSet(viewsets.ModelViewSet):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
 
 
-class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
+class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer

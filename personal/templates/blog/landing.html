@@ -1,4 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<div class="foo" ng-controller="category_controller as cc">
+    <div class="category" ng-repeat="c in categories">
+        {[ c ]}
+    </div>
+</div>
 {% endblock %}

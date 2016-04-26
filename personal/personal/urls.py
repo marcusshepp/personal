@@ -34,6 +34,6 @@ urlpatterns = [
     url(r'^blog/$', blog_landing, name="blog_landing"),
 
     # api
-    url(r'^api/', include(blog_router.urls)),
+    url(r'^blog/api/', include(blog_router.urls)),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
