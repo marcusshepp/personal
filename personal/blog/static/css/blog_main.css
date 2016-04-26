@@ -34,7 +34,25 @@
     width: 20%;
     vertical-align: top;
     margin-left: 25%;
+    border-left: 1px black solid;
+    padding: 1em;
 }
 .category{
-    margin-bottom: 1.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5em;
+}
+.category:hover{
+    animation: button_hover 1s;
+    background-color: #E6E6E6;
+}
+/* Animations */
+@keyframes button_hover{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: #E6E6E6;
+    }
 }

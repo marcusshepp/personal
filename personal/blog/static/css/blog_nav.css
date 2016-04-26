@@ -2,13 +2,14 @@
     position: relative;
     top: 0;
     box-shadow: .5px .5px 1px .5px rgba(0, 0, 0, 0.2);
-    height: 3.5em;
+    height: 4.5em;
 }
-.nav_header{
+.nav_btn{
     display: inline-block;
     box-shadow: .5px .5px 1px .5px rgba(0, 0, 0, 0.2);
     height: 1em;
     padding: 1em;
+    padding-bottom: 2em;
     margin-top: 4px;
     margin-left: 5px;
     cursor: pointer;
@@ -16,7 +17,7 @@
 .github_icon{
     position: absolute;
     right: 1em;
-    top: 4px;
+    top: 10px;
     text-decoration: none;
     color: black;
 }
