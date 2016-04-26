@@ -1,0 +1,32 @@
+.show_modal_btn {
+  background-color: #A1BDC7;
+  cursor: pointer;
+  text-align: center; }
+
+.modal {
+  position: absolute;
+  margin: 0 auto;
+  top: 25%; }
+
+.modal_idle {
+  display: none; }
+
+.modal_inactive {
+  animation: modal_close 1s; }
+
+.modal_active {
+  display: block;
+  animation: modal_drop 1s; }
+
+@keyframes modal_drop {
+  0% {
+    top: 0%; }
+  100% {
+    top: 25%; } }
+@keyframes modal_close {
+  0% {
+    top: 25%; }
+  100% {
+    top: -25%; } }
+
+/*# sourceMappingURL=modal.css.map */
