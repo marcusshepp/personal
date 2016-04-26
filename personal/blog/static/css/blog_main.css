@@ -14,6 +14,11 @@
     padding: 1em;
     background-color: #D8D8D8;
     border-radius: 5px;
+    cursor: pointer;
+}
+.post:hover{
+    animation: button_hover_inv 1s;
+    background-color: white;
 }
 .post_body{
     
@@ -44,7 +49,7 @@
     padding: 0.5em;
 }
 .category:hover{
-    animation: button_hover 1s;
+    animation: button_hover 0.5s;
     background-color: #E6E6E6;
 }
 /* Animations */
@@ -54,5 +59,13 @@
     }
     100%{
         background-color: #E6E6E6;
+    }
+}
+@keyframes button_hover_inv{
+    0%{
+        background-color: #E6E6E6;
+    }
+    100%{
+        background-color: white;
     }
 }

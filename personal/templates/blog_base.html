@@ -24,6 +24,11 @@
         <div class="content" ng-app="blog_app">
             {% block content %}
             {% endblock content %}
+            <div class="categories_panel" ng-controller="category_controller as cc"> 
+                <div class="category" ng-repeat="category_name in categories">
+                    {[ category_name ]}
+                </div>
+            </div>
         </div>
 
         {% block javascript %}

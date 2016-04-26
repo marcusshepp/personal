@@ -16,6 +16,7 @@ class PostSerializer(serializers.ModelSerializer):
             "get_category_name",
             "id",
             "display_date_created",
+            "get_body_preview",
         )
 
 

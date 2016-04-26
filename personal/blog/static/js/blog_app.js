@@ -34,7 +34,7 @@ blog_app.controller("post_controller", ["$scope", "$http",
                     posts.push(
                             [
                                 response.data[i].title, 
-                                response.data[i].body,
+                                response.data[i].get_body_preview,
                                 response.data[i].get_category_name,
                                 response.data[i].display_date_created,
                             ]

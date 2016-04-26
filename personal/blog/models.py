@@ -26,6 +26,9 @@ class Post(TrackTimes):
     def get_category_name(self):
         return "{}".format(self.category.name)
         
+    def get_body_preview(self):
+        return "{} ...".format(self.body[:125])
+
 
 class Comment(TrackTimes):
     class Meta:
