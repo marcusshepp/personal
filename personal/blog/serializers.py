@@ -13,7 +13,7 @@ class PostSerializer(serializers.ModelSerializer):
             "title",
             "body",
             "placeholder_image",
-            "category",
+            "get_category_name",
             "id",
             "display_date_created",
         )

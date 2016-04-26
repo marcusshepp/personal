@@ -1,0 +1,40 @@
+.content{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.posts_container{
+    display: inline-block;
+    width: 50%;
+}
+.post{
+    position: relative;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #D8D8D8;
+    border-radius: 5px;
+}
+.post_body{
+    
+}
+.post_title{
+    margin-bottom: 0.3em;
+}
+.post_category{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.post_date{
+    margin-top: 0.4em;
+}
+.categories_panel{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-left: 25%;
+}
+.category{
+    margin-bottom: 1.2em;
+}

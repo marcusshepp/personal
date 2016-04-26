@@ -3,3 +3,4 @@
 .opt/*
 personal/personal/settings.py
 personal/db*
+.DS_Store

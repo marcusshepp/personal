@@ -22,7 +22,10 @@ class Post(TrackTimes):
 
     def __unicode__(self):
         return "{0}".format(self.title)
-
+        
+    def get_category_name(self):
+        return "{}".format(self.category.name)
+        
 
 class Comment(TrackTimes):
     class Meta:
